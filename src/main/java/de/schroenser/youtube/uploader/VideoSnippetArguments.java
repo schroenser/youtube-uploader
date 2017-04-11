@@ -10,7 +10,7 @@ public class VideoSnippetArguments
     @Parameter(names = "-title", description = "The video's title.")
     private String title;
 
-    @Parameter(names = "-description", description = "The video's description.")
+    @Parameter(names = "-description", description = "The video's description.", converter = DescriptionConverter.class)
     private String description;
 
     @Parameter(names = "-tags",
