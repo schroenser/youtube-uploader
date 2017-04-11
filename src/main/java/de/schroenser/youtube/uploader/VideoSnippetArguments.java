@@ -15,10 +15,9 @@ public class VideoSnippetArguments
 
     @Parameter(names = "-tags",
         description = "A comma separated list of keyword tags associated with the video.")
-    //TODO how to support tags with spaces?
     private List<String> tags;
 
-    @Parameter(names = "-defaultLanguage", description = "he language of the videos's default snippet.")
+    @Parameter(names = "-defaultLanguage", description = "The language of the videos's default snippet.")
     private String defaultLanguage;
 
     @Parameter(names = "-defaultAudioLanguage", description = "The language spoken in the video's default audio track.")
